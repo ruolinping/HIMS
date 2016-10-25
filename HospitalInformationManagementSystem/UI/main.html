@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="mainApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../Scripts/angular-ui-router.js"></script> 
+    <script src="../Scripts/angular.js"></script>
+    <script src="../AngularJsApp/mainApp.js"></script> 
+    <script src="../Scripts/jquery-3.1.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-controller="mainController">
+    <div id="main">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="#">HIMS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Patients</a></li>
+                <li><a ui-sref="about">Visits</a></li>
+                <li><a ui-sref="about">Documents</a></li>
+                <li><a ui-sref="about">Scheduler</a></li>
+                <li><a ui-sref="about">Tools</a></li>
+                
+            </ul>
+        </nav>
+        <div class="container">
+
+             <div ui-view></div>
+
+        </div>
+
+    </div>
+</body>
+</html>
